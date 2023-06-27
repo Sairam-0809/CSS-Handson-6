@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(248, 248, 67);
+}
+h1{
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+h3{
+    text-align: center;
+}
+.box{
+    width: 110px;
+    height: 110px;
+    background-color: rgb(47, 174, 47);
+    
+}
+.box1{
+    background-color:#488874 ;
+    animation-name: first-row;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes first-row {
+    0%{
+        transform: skew(-22deg);
+    }
+   50%{
+    transform:skew(22deg);
+   }
+  
+    100%{
+        transform: skew(-22deg);
+    }
+}
+.box2{
+    background-color:rgb(146, 147, 150);
+    animation-name: second-row;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+ 
+}
+@keyframes second-row {
+    0%{
+        transform: skewy(20deg);
+    }
+   50%{
+    transform:skewy(-20deg);
+   }
+  
+    100%{
+        transform: skewy(20deg);
+    }
+}
+.box3{
+    background-color:#488874 ;
+    animation-name: third-row;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes third-row{
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.box5{
+    background-color:#488874 ;
+    animation-name: fourth-row-first;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes fourth-row-first{
+       0%{
+
+        transform:scaley(0.5);
+    }
+    50%{
+        transform: scaley(1);
+    }
+    100%{
+        transform: scaley(0.5);
+    }
+}
+.box6{
+    background-color: rgb(143, 48, 48);
+    animation-name: fourth-row-second;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes fourth-row-second{
+    0%{
+
+        transform:scalex(0.5);
+    }
+    50%{
+        transform: scalex(1);
+    }
+    100%{
+        transform: scalex(0.5);
+    }
+
+}
+
+.box7{
+    background-color: rgb(72, 247, 72);
+    animation-name: fourth-row-third;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes fourth-row-third{
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(48deg);
+    }
+    75% {
+        transform: rotate(-48deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+ol{
+    margin-left: 450px;
+}
+.container{ 
+     margin-left:0;
+}
+.row{
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    margin-left:40px
+}
+.container li{
+        margin-top: 15px;
+}
+.item1{
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-property: width;
+}
+.item1:hover{
+    width:300px ;
+    
+}
+.parent-container{
+    display: flex;
+    justify-content: center;
+
+}
+.item2{
+    transition-duration:3s,2.5s;
+    transition-timing-function: ease-in;
+    transition-property: height width;
+}
+.item2:hover{
+    width: 300px;
+    height: 330px;
+}
+.item3{
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    transition-property: width;
+}
+.item3:hover{
+    width:300px ;
+    
+}
+.item4{
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-property: width;
+}
+.item4:hover{
+    width:300px ;
+    
+}
+.item5{
+    transition-duration: 2s;
+    transition-timing-function:linear;
+    transition-property: width;
+}
+.item5:hover{
+    width:300px ;
+    
+}
+.item6{
+    transition-duration: 2.5s;
+    transition-timing-function: ease-in;
+    transition-property: width;
+}
+.item6:hover{
+    width:300px ;
+    
+}
+.item7{
+    transition-duration: 2s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-property: width;
+}
+.item7:hover{
+    width:300px ;
+    
+}
+
